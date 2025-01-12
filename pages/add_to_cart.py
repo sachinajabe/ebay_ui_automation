@@ -13,7 +13,7 @@ class AddToCart(BasePage):
         self.input_text(self.search_input_xpath, "book")
         self.click(self.search_button_xpath)
         self.click_and_switch_to_new_window(self.first_book_xpath)
-        time.sleep(30)
+        time.sleep(10)
         self.click(self.add_to_cart_button_xpath)
         element = self.find_element(self.item_in_cart_xpath)
 
